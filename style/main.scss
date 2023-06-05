@@ -112,22 +112,30 @@ body {
 .contact {
   width: 70%;
   margin: auto;
-  padding-top: 5em;
   height: 100vh;
   border: 1px solid blue;
 }
 
+.section-title {
+  margin: 3em 0;
+}
+
 .about {
-  display: flex;
-  align-items: center;
+  h1 {
+    text-align: center;
+  }
 }
 
 .profile {
-  width: 30%;
   border: 1px solid red;
   text-align: center;
+
   img {
-    width: 100%;
+    width: 50%;
     border-radius: 100%;
   }
+}
+
+.info {
+  border: 1px solid blue;
 }
