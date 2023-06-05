@@ -25,6 +25,12 @@ body::before {
   opacity: 0.5;
   z-index: -1;
 }
+@media (max-width: 768px) {
+  body::before {
+    background-image: url(../img/backImgRes.png);
+    background-position: left 0 top 21em;
+  }
+}
 
 .navbar {
   position: fixed;
