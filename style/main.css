@@ -31,6 +31,12 @@ body::before {
     background-position: left 0 top 21em;
   }
 }
+@media (max-width: 425px) {
+  body::before {
+    background-image: url(../img/backImgRes2.png);
+    background-position: left 0 top 0;
+  }
+}
 
 .navbar {
   position: fixed;
@@ -154,4 +160,5 @@ body::before {
 .info-content {
   border: 1px solid blue;
   display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */

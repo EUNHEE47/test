@@ -31,6 +31,10 @@ body {
       background-image: url(../img/backImgRes.png);
       background-position: left 0 top 21em;
     }
+    @media (max-width: 425px) {
+      background-image: url(../img/backImgRes2.png);
+      background-position: left 0 top 0;
+    }
   }
 }
 
@@ -159,6 +163,7 @@ body {
 .info-content {
   border: 1px solid blue;
   display: flex;
+  justify-content: center;
   div {
     // border: 1px solid red;
   }
