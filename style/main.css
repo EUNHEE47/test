@@ -1,0 +1,132 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  position: relative;
+  color: #545c39;
+}
+body::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/backImg.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  body::before {
+    background-image: url(../img/backImgRes.png);
+  }
+}
+
+.navbar {
+  position: fixed;
+  width: 100vw;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.navbar-brand {
+  color: #545c39;
+  margin: 0 10em;
+}
+@media (max-width: 768px) {
+  .navbar-brand {
+    margin: 0;
+  }
+}
+
+.collapse {
+  justify-content: flex-end;
+  margin: 0 10em;
+}
+@media (max-width: 768px) {
+  .collapse {
+    margin: 0;
+  }
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.scroll-icon {
+  position: absolute;
+  bottom: 8em;
+  animation: scroll 1s infinite 4s;
+  opacity: 0;
+}
+
+@keyframes scroll {
+  0% {
+    bottom: 8em;
+    opacity: 1;
+  }
+  50% {
+    bottom: 7em;
+    opacity: 1;
+  }
+  100% {
+    bottom: 8em;
+    opacity: 1;
+  }
+}
+.intro {
+  opacity: 0;
+}
+
+@keyframes introFade {
+  to {
+    opacity: 1;
+  }
+}
+.main-text {
+  color: #545c39;
+  font-weight: 500;
+}
+.main-text h3 {
+  margin-bottom: 1.5em;
+}
+
+.about,
+.skills,
+.project,
+.contact {
+  width: 70%;
+  margin: auto;
+  padding-top: 5em;
+  height: 100vh;
+  border: 1px solid blue;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  width: 30%;
+  border: 1px solid red;
+  text-align: center;
+}
+.profile img {
+  width: 100%;
+  border-radius: 100%;
+}/*# sourceMappingURL=main.css.map */
