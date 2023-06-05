@@ -36,11 +36,16 @@ body::before {
   width: 100vw;
   transition: all 0.5s;
   z-index: 1;
+  color: #545c39;
 }
 
 .navbar-brand {
   color: #545c39;
   margin: 0 10em;
+}
+.navbar-brand:hover {
+  color: #545c39;
+  opacity: 0.5;
 }
 @media (max-width: 768px) {
   .navbar-brand {
@@ -51,6 +56,10 @@ body::before {
 .collapse {
   justify-content: flex-end;
   margin: 0 10em;
+}
+.collapse:hover {
+  color: #545c39;
+  opacity: 1;
 }
 @media (max-width: 768px) {
   .collapse {
@@ -66,11 +75,14 @@ body::before {
   flex-direction: column;
   position: relative;
 }
+.main img {
+  width: 20%;
+  border-radius: 100%;
+}
 
 .scroll-icon {
   position: absolute;
-  bottom: 8em;
-  animation: scroll 1s infinite 4s;
+  animation: scroll 1s infinite 3.5s;
   opacity: 0;
 }
 
@@ -112,11 +124,10 @@ body::before {
   width: 70%;
   margin: auto;
   height: 100vh;
-  border: 1px solid blue;
 }
 
 .section-title {
-  margin: 3em 0;
+  margin: 2em 0 1em;
 }
 
 .about h1 {
@@ -124,14 +135,16 @@ body::before {
 }
 
 .profile {
-  border: 1px solid red;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .profile img {
-  width: 50%;
+  width: 30%;
   border-radius: 100%;
 }
 
-.info {
+.info-content {
   border: 1px solid blue;
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

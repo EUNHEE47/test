@@ -1,5 +1,4 @@
 const text = [
-  "<h3>안녕하세요. 신입 개발자 박은희 입니다.</h3>",
   "끊임없는 성장과 발전을 추구하며",
   "협업과 커뮤니케이션 능력을 바탕으로",
   "사용자가 원하는 최상의 경험을 제공하기 위해 노력하겠습니다.",
@@ -13,9 +12,8 @@ text.forEach((text) => {
 
 //intro-text
 
-const introText = document.querySelectorAll(".intro");
-
 window.onload = () => {
+  const introText = document.querySelectorAll(".intro");
   let timer = 0;
   introText.forEach((item) => {
     item.style.animation = `introFade 500ms ${(timer += 600)}ms forwards`;
@@ -62,3 +60,12 @@ $(window).scroll(function () {
 
 //   $html.animate({ scrollTop: posTop });
 // });
+
+//------------------about
+const aboutContent = [
+  {
+    icon: "fa-solid fa-user",
+    title: "BIRTH DATE",
+    content: "1993.04.07",
+  },
+];
