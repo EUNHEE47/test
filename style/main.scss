@@ -27,9 +27,9 @@ body {
     height: 100%;
     opacity: 0.5;
     z-index: -1;
-    @media (max-width: 768px) {
-      background-image: url(../img/backImgRes.png);
-    }
+    // @media (max-width: 768px) {
+    //   background-image: url(../img/backImgRes.png);
+    // }
   }
 }
 
@@ -66,21 +66,32 @@ body {
 }
 
 .main {
+  position: relative;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  position: relative;
+}
+
+.profile-img {
+  text-align: center;
+  margin-bottom: 1em;
   img {
-    width: 20%;
+    width: 15%;
     border-radius: 100%;
   }
 }
 
+.main-text {
+  // border: 1px solid red;
+  text-align: center;
+  font-weight: 500;
+}
+
 .scroll-icon {
   position: absolute;
-  animation: scroll 1s infinite 3.5s;
+  animation: scroll 1s infinite 4s;
   opacity: 0;
 }
 
@@ -109,14 +120,6 @@ body {
   }
 }
 
-.main-text {
-  color: #545c39;
-  font-weight: 500;
-  h3 {
-    margin-bottom: 1.5em;
-  }
-}
-
 //--------------------------about
 .about,
 .skills,
@@ -139,15 +142,17 @@ body {
 }
 
 .profile {
-  // border: 1px solid red;
-  // text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   img {
-    width: 30%;
+    width: 25%;
     border-radius: 100%;
   }
+}
+
+.info {
+  border: 1px solid red;
+  width: 50%;
+  margin: auto;
 }
 
 .info-content {

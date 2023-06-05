@@ -25,11 +25,6 @@ body::before {
   opacity: 0.5;
   z-index: -1;
 }
-@media (max-width: 768px) {
-  body::before {
-    background-image: url(../img/backImgRes.png);
-  }
-}
 
 .navbar {
   position: fixed;
@@ -68,21 +63,31 @@ body::before {
 }
 
 .main {
+  position: relative;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  position: relative;
 }
-.main img {
-  width: 20%;
+
+.profile-img {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.profile-img img {
+  width: 15%;
   border-radius: 100%;
+}
+
+.main-text {
+  text-align: center;
+  font-weight: 500;
 }
 
 .scroll-icon {
   position: absolute;
-  animation: scroll 1s infinite 3.5s;
+  animation: scroll 1s infinite 4s;
   opacity: 0;
 }
 
@@ -109,14 +114,6 @@ body::before {
     opacity: 1;
   }
 }
-.main-text {
-  color: #545c39;
-  font-weight: 500;
-}
-.main-text h3 {
-  margin-bottom: 1.5em;
-}
-
 .about,
 .skills,
 .project,
@@ -135,13 +132,17 @@ body::before {
 }
 
 .profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 .profile img {
-  width: 30%;
+  width: 25%;
   border-radius: 100%;
+}
+
+.info {
+  border: 1px solid red;
+  width: 50%;
+  margin: auto;
 }
 
 .info-content {
