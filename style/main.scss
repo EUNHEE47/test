@@ -13,6 +13,14 @@ $font-color: #545c39;
   box-sizing: border-box;
 }
 
+.about,
+.skills,
+.project,
+.contact {
+  margin: auto;
+  height: 100vh;
+}
+
 body {
   font-family: "Noto Sans KR", sans-serif;
   position: relative;
@@ -29,8 +37,12 @@ body {
     z-index: -1;
     @media (max-width: 768px) {
       background-image: url(../img/backImgRes2.png);
-      background-size: 100% 100%;
-      background-attachment: fixed;
+      .about,
+      .skills,
+      .project,
+      .contact {
+        height: 100%;
+      }
     }
   }
 }
@@ -120,14 +132,6 @@ body {
   to {
     opacity: 1;
   }
-}
-
-.about,
-.skills,
-.project,
-.contact {
-  margin: auto;
-  height: 100vh;
 }
 
 .section-title {
