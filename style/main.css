@@ -27,14 +27,9 @@ body::before {
 }
 @media (max-width: 768px) {
   body::before {
-    background-image: url(../img/backImgRes.png);
-    background-position: left 0 top 21em;
-  }
-}
-@media (max-width: 425px) {
-  body::before {
     background-image: url(../img/backImgRes2.png);
-    background-position: left 0 top 0;
+    width: 100vw;
+    height: 100vh;
   }
 }
 
