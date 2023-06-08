@@ -28,8 +28,6 @@ body::before {
 @media (max-width: 768px) {
   body::before {
     background-image: url(../img/backImgRes2.png);
-    width: 100vw;
-    height: 100vh;
   }
 }
 
@@ -125,7 +123,6 @@ body::before {
 .skills,
 .project,
 .contact {
-  width: 70%;
   margin: auto;
   height: 100vh;
 }
@@ -142,18 +139,36 @@ body::before {
   text-align: center;
 }
 .profile img {
-  width: 25%;
+  width: 20%;
   border-radius: 100%;
 }
 
-.info {
-  border: 1px solid red;
-  width: 50%;
-  margin: auto;
-}
-
-.info-content {
-  border: 1px solid blue;
+.info,
+.info-link {
   display: flex;
   justify-content: center;
+}
+
+.info-content,
+.info-link-item {
+  text-align: center;
+  padding: 0.5em 0;
+  width: 15em;
+  margin: 0.5em;
+  background-color: #efeadd;
+  border-radius: 15px;
+}
+.info-content h5,
+.info-link-item h5 {
+  margin-bottom: 1em;
+}
+.info-content img,
+.info-link-item img {
+  width: 3em;
+}
+.info-content img:hover,
+.info-link-item img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transform: scale(1.1);
 }/*# sourceMappingURL=main.css.map */

@@ -4,7 +4,7 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
-$back-color: #dce2e2;
+$back-color: #efeadd;
 $font-color: #545c39;
 
 * {
@@ -29,8 +29,6 @@ body {
     z-index: -1;
     @media (max-width: 768px) {
       background-image: url(../img/backImgRes2.png);
-      width: 100vw;
-      height: 100vh;
     }
   }
 }
@@ -122,22 +120,22 @@ body {
   }
 }
 
-//--------------------------about
 .about,
 .skills,
 .project,
 .contact {
-  width: 70%;
   margin: auto;
   height: 100vh;
-  // border: 1px solid blue;
 }
 
 .section-title {
   margin: 2em 0 1em;
+  // margin-top: 2em;
 }
 
+//--------------------------about
 .about {
+  // border: 1px solid red;
   h1 {
     text-align: center;
   }
@@ -146,22 +144,34 @@ body {
 .profile {
   text-align: center;
   img {
-    width: 25%;
+    width: 20%;
     border-radius: 100%;
   }
 }
 
-.info {
-  border: 1px solid red;
-  width: 50%;
-  margin: auto;
-}
-
-.info-content {
-  border: 1px solid blue;
+.info,
+.info-link {
   display: flex;
   justify-content: center;
-  div {
-    // border: 1px solid red;
+}
+
+.info-content,
+.info-link-item {
+  text-align: center;
+  padding: 0.5em 0;
+  width: 15em;
+  margin: 0.5em;
+  background-color: $back-color;
+  border-radius: 15px;
+  h5 {
+    margin-bottom: 1em;
+  }
+  img {
+    width: 3em;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.5;
+      transform: scale(1.1);
+    }
   }
 }

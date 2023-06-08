@@ -65,8 +65,34 @@ $(window).scroll(function () {
 //------------------about
 const aboutContent = [
   {
-    icon: "fa-solid fa-user",
+    icon: "fa-solid fa-cake-candles",
     title: "BIRTH DATE",
     content: "1993.04.07",
   },
+  {
+    icon: "fa-solid fa-phone",
+    title: "PHONE",
+    content: "010-5454-4373",
+  },
+  {
+    icon: "fa-solid fa-school",
+    title: "EDUCATION",
+    content: `2022.11 ~ 2023.03<br>국제 컴퓨터 아트학원`,
+  },
+  {
+    icon: "fa-solid fa-briefcase",
+    title: "CAREER",
+    content: `2016.07 ~ 2022.08<br>(주)타이드 스퀘어`,
+  },
 ];
+
+aboutContent.forEach((item) => {
+  let about = `<div class="col-lg-3 col-md-6 col-sm-12 info-content">
+               
+                  <h5>${item.title}</h5>
+                  <span>${item.content}</span>
+              
+              </div>`;
+
+  $(".info").append(about);
+});
