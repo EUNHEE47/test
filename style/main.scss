@@ -13,14 +13,6 @@ $font-color: #545c39;
   box-sizing: border-box;
 }
 
-.about,
-.skills,
-.project,
-.contact {
-  margin: auto;
-  height: 100vh;
-}
-
 body {
   font-family: "Noto Sans KR", sans-serif;
   position: relative;
@@ -134,9 +126,16 @@ body {
   }
 }
 
+.about,
+.skills,
+.project,
+.contact {
+  margin: auto;
+  border: 1px solid red;
+}
+
 .section-title {
   margin: 2em 0 1em;
-  // margin-top: 2em;
 }
 
 //--------------------------about
@@ -152,6 +151,12 @@ body {
   img {
     width: 20%;
     border-radius: 100%;
+    @media (max-width: 768px) {
+      width: 50%;
+    }
+    @media (max-width: 425px) {
+      width: 70%;
+    }
   }
 }
 
@@ -180,4 +185,14 @@ body {
       transform: scale(1.1);
     }
   }
+}
+
+.skills {
+  h1 {
+    text-align: center;
+  }
+}
+
+.sss {
+  opacity: 0;
 }

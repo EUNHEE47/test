@@ -29,6 +29,12 @@ body::before {
   body::before {
     background-image: url(../img/backImgRes2.png);
   }
+  body::before .about,
+  body::before .skills,
+  body::before .project,
+  body::before .contact {
+    height: 100%;
+  }
 }
 
 .navbar {
@@ -124,7 +130,7 @@ body::before {
 .project,
 .contact {
   margin: auto;
-  height: 100vh;
+  border: 1px solid red;
 }
 
 .section-title {
@@ -141,6 +147,16 @@ body::before {
 .profile img {
   width: 20%;
   border-radius: 100%;
+}
+@media (max-width: 768px) {
+  .profile img {
+    width: 50%;
+  }
+}
+@media (max-width: 425px) {
+  .profile img {
+    width: 70%;
+  }
 }
 
 .info,
@@ -171,4 +187,12 @@ body::before {
   cursor: pointer;
   opacity: 0.5;
   transform: scale(1.1);
+}
+
+.skills h1 {
+  text-align: center;
+}
+
+.sss {
+  opacity: 0;
 }/*# sourceMappingURL=main.css.map */

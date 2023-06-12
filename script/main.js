@@ -21,46 +21,16 @@ window.onload = () => {
   });
 };
 
-$(window).scroll(function () {
-  if (window.scrollY >= 50) {
-    $(".navbar").css("background", "#efeadd");
-  } else {
-    $(".navbar").css("background", "none");
-  }
+$(document).ready(function () {
+  /* 1 */
+  $(window).scroll(function () {
+    if (window.scrollY >= 50) {
+      $(".navbar").css("background", "#efeadd");
+    } else {
+      $(".navbar").css("background", "none");
+    }
+  });
 });
-
-// window.addEventListener(
-//   "wheel",
-//   function (e) {
-//     e.preventDefault();
-//   },
-//   { passive: false }
-// );
-
-// var $html = $("html");
-
-// var page = 1;
-
-// var lastPage = $(".section").length;
-
-// $html.animate({ scrollTop: 0 }, 0);
-
-// $(window).on("wheel", function (e) {
-//   if ($html.is(":animated")) return;
-
-//   if (e.originalEvent.deltaY > 0) {
-//     if (page == lastPage) return;
-
-//     page++;
-//   } else if (e.originalEvent.deltaY < 0) {
-//     if (page == 1) return;
-
-//     page--;
-//   }
-//   var posTop = (page - 1) * $(window).height();
-
-//   $html.animate({ scrollTop: posTop });
-// });
 
 //------------------about
 const aboutContent = [
@@ -87,11 +57,9 @@ const aboutContent = [
 ];
 
 aboutContent.forEach((item) => {
-  let about = `<div class="col-lg-3 col-md-6 col-sm-12 info-content">
-               
+  let about = `<div class="col-lg-3 col-md-6 col-sm-12 info-content">            
                   <h5>${item.title}</h5>
-                  <span>${item.content}</span>
-              
+                  <span>${item.content}</span>     
               </div>`;
 
   $(".info").append(about);
